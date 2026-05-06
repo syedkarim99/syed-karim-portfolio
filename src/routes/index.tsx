@@ -2,7 +2,7 @@ import resumePDF from "../assets/Syed_Karim_Resume.pdf";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles, Code2, LineChart, Globe } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profile from "../assets/profile.jpg"
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -77,7 +77,7 @@ rel="noopener noreferrer"
               <div className="absolute -inset-6 bg-gradient-to-br from-primary/30 to-accent/30 rounded-3xl blur-2xl" />
               <div className="relative rounded-3xl overflow-hidden glass p-2">
                 <img
-                  src={profileImg}
+                  src={profile}
                   alt="Syed Karim"
                   width={520}
                   height={520}
